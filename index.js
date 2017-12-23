@@ -1,5 +1,6 @@
 const express= require("express");
 const app=express();
+var port = process.env.PORT || 8080;
 app.use(express.static("public"));
 
 app.use(function(req, res, next) {
@@ -111,7 +112,9 @@ console.log("calling mobile")
 })
 
 
-
-                             app.listen(7777,function(){
-    console.log("Server start");
-})
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
+//                             app.listen(7777,function(){
+//    console.log("Server start");
+//})
