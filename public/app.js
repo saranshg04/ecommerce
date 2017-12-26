@@ -45,7 +45,7 @@ app.directive("dodoDirective", function () {
         controller: "myCntrl",
         template: `<nav class='navbar navbar-inverse'>
         <div class="page-header">
-  <h1>Saransh</h1>
+  <h1>E-Gadgets</h1>
 </div>
 <div class='container-fluid'><div class='navbar-header'><button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false'><span class='sr-only'>Toggle navigation</span>
         <span class='icon-bar'></span>
