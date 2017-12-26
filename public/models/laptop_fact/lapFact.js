@@ -1,7 +1,7 @@
-app.factory("lapfactory", function ($http, $q) {
+app.factory("lapfactory", function ($https, $q) {
     var getJSON = function () {
         var pro = $q.defer();
-        $http.get("https://saransh-ecommerce.herokuapp.com/#/laptops").then(function (data) {
+        $https.get("https://saransh-ecommerce.herokuapp.com/#/laptops").then(function (data) {
             console.log("Success");
             pro.resolve(data);
         }, function (er) {
